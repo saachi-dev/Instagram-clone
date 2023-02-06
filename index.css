@@ -29,11 +29,6 @@ body{
     display: flex;
     justify-content: space-between;
 }
-
-img{
-    height: 50px;
-    font-weight: 50px;
-}
 button{
     background-color: transparent;
     border: none;
@@ -99,6 +94,9 @@ width: 100%;
     margin-left: auto;
     margin-right: 1.5rem;
 }
+.like-btn{
+    animation: beat2 .12s ;
+}
 
 .like-btn,.comment-btn,.share-btn{
     margin-left: 1.5rem;
@@ -109,4 +107,19 @@ width: 100%;
 }
 .like-count{
     margin-left:10px ;
+}
+
+.liked{
+    margin-left: 1.5rem;
+    animation: beat .12s ;
+    border: none;
+    background-color: transparent;
+}
+
+@keyframes beat{
+	to { transform: scale(0.1); }
+}
+
+@keyframes beat2{
+	to { transform: scale(0.1); }
 }
