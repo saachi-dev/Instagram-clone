@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"DM Sans" ;
+}
+.grand-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+}
+.container{
+    
+    width: 46rem;
+    border: solid;
+    min-height: 100%;
+    
+}
+.logo{
+    margin-left:10px ;
+    margin-top:6px ;
+}
+.header{
+    height: 60px;
+   
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    height: 50px;
+    font-weight: 50px;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+
+.msg-img, .create-post-img{
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 12.5px;
+    margin-bottom:10px;
+    height: 30px;
+}
+.stories{
+   display: flex;
+   justify-content: space-around;
+   padding-bottom:15px ;
+   border-bottom: 1px solid rgb(231, 228, 228);
+}
+.dp{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 2px solid #fc4c95;
+    padding: 2px;
+
+}
+.post-header{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.post-dp{
+    padding: 2px;
+    margin: 10px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fc4c95;
+    
+}
+.three-dot{
+    font-size: 20px;
+    margin-right: 25px ;
+    position: relative;
+    bottom: -25px;
+}
+.username{
+    position: relative;
+    bottom: -27px;
+    flex:1;
+}
+.post-image{
+height: 40rem;
+width: 100%;
+}
+.post-footer{
+    display: flex;
+    justify-content: left;
+    margin-top: 15px;
+}
+
+.save-btn{
+    margin-left: auto;
+    margin-right: 1.5rem;
+}
+
+.like-btn,.comment-btn,.share-btn{
+    margin-left: 1.5rem;
+}
+
+.post-footer img{
+    height: 2rem;
+}
+.like-count{
+    margin-left:10px ;
+}
