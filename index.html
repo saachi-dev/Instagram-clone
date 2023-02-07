@@ -16,7 +16,10 @@
     <div class="header">
         <img class="logo" src="./assets/instagram logo.png" alt="Instagram">
         <span>
-            <button class="create-post"> <img class="create-post-img" src="./assets/post.png"></button>
+            <input type="file" class="choose-file">
+            <button class="create-post" 
+            onclick="document.querySelector('.choose-file').click()"
+            > <img class= 'create-post-img' src='./assets/post.png'> </button>
             <button class="msg"> <img class="msg-img" src="./assets/msg.png" ></button>
         </span>
         </div>   
@@ -51,5 +54,9 @@
 </div>
 
     <script src="index.js" ></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>$('choose-file').change( function(event) {
+        $("img").fadeIn("fast").attr('src',URL.createObjectURL(event.target.files[0]));
+    });</script> -->
 </body>
 </html>

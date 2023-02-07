@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family:"DM Sans" ;
+    font-family:"DM Sans";
 }
 .grand-parent{
     display: flex;
@@ -41,11 +41,14 @@ button{
     margin-bottom:10px;
     height: 30px;
 }
+.choose-file{
+visibility: hidden;
+}
 .stories{
    display: flex;
    justify-content: space-around;
    padding-bottom:15px ;
-   border-bottom: 1px solid rgb(231, 228, 228);
+   border-bottom: 1px solid rgb(238, 238, 238);
 }
 .dp{
     height: 70px;
@@ -95,7 +98,7 @@ width: 100%;
     margin-right: 1.5rem;
 }
 .like-btn{
-    animation: beat2 .12s ;
+    animation: beat2 .2s ease-in-out;
 }
 
 .like-btn,.comment-btn,.share-btn{
@@ -111,15 +114,28 @@ width: 100%;
 
 .liked{
     margin-left: 1.5rem;
-    animation: beat .12s ;
+    animation: beat .2s ease-in-out;
     border: none;
     background-color: transparent;
 }
-
+.create-post:hover{
+    animation: scale 0.4s ease-in-out;
+}
+@keyframes scale{
+    100%{
+        transform: scale(1.2);
+    }
+}
 @keyframes beat{
 	to { transform: scale(0.1); }
 }
 
 @keyframes beat2{
 	to { transform: scale(0.1); }
+}
+input::file-selector-button{
+   width: 2rem; 
+   height: 2rem;
+   border-radius: 6px;
+   background-color: transparent;
 }
